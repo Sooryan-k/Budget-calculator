@@ -1,0 +1,132 @@
+.userinfo-div{
+    padding: 30px 0 30px 0;
+}
+.expenses-div{
+    color: rgb(255, 0, 0);
+    padding: 30px 0 30px 0;
+}
+.income{
+    margin-top: 10px;
+}
+.productcost{
+    margin-top: 10px;
+}
+.addbutton{
+    margin-top: 20px;
+}
+.submitbtn{
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.cancelbtn{
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.buttons{
+    height: 40px;
+    border: none;
+    width: 300px;
+    border-radius: 20px;
+}
+.submit-div{
+    padding: 30px 0 30px 0;
+}
+.nav-div{
+    font-family: 'Tilt Prism', cursive;
+    padding: 10px 0 10px 0;
+    background: linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+
+
+}
+
+body{
+    background: linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+    display: grid;
+}
+
+#budgetbuddy{
+    font-size: 70px;
+    color: #e3d514;
+}
+#budgetpartner{
+    font-size: 35px;
+    color: #14e356;
+}
+#font{
+    font-family: 'Graduate', cursive;
+    font-size: 40px;
+    text-shadow: none;
+    text-decoration-line: none;
+}
+.tableresult{
+    background-color: rgb(153, 245, 214);
+    color: rgb(255, 0, 0);
+}
+.en{
+    background-color: rgb(42, 199, 173);
+    font-family: 'Graduate', cursive;
+}
+
+
+.username{
+    position: relative;
+}
+.income{
+    position: relative;
+}
+.productname{
+    position: relative;
+}
+.productcost{
+    position: relative;
+}
+.label{
+    position: absolute;
+    left: 100px;
+    top: 14px;
+    transition: all 0.2s;
+    padding: 0 2px;
+    z-index: 1;
+    color: rgb(66, 70, 70);
+}
+.text-box{
+    padding: 0.8rem;
+    width: 75%;
+    height: 100%;
+    border: 2px solid #ace314;
+    background: #272530;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s;
+    color: whitesmoke;
+
+}
+.label::before{
+    content: "";
+    height: 5px;
+    background-color: #272538;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+.text-box:focus{
+border: 2px solid #fd7f0a;
+}
+.text-box:focus ~ .label,.text-box:not(:placeholder-shown).text-box:not(:focus)~.label{
+    top: -10px;
+    color: #fd7f0a;
+    font-size: 14px;
+}
+.text-box::placeholder{
+    font-size: 16px;
+    opacity: 0;
+    transition: all .3s;
+}
+.text-box:focus::placeholder{
+    opacity: 1;
+    animation-delay: 0.2s;
+
+}
